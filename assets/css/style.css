@@ -325,7 +325,7 @@ body {
                     var(--gradient-1);
   background-repeat: no-repeat, no-repeat, no-repeat;
   background-position: -280px bottom, center, center;
-  background-size: auto, cover, auto;
+  background-size:  cover, auto;
   padding-block-start: 120px;
   padding-block-end: var(--section-padding);
 }
@@ -350,10 +350,6 @@ body {
   font-size: var(--fs-8);
   margin-block-end: 30px;
 }
-
-
-
-
 
 /*-----------------------------------*\
   #ABOUT
@@ -497,8 +493,6 @@ body {
   max-width: max-content;
   margin-inline: auto;
 }
-
-
 
 
 
@@ -941,14 +935,16 @@ body {
   /**
    * contact
    */
- .form-Container{
+   .form-container{
+  z-index: 0;
   position: relative;
   width: 100%;
-  height: 100vh;
+  height: 50vh;
   align-items: center;
-  background-color: rgb(255, 250, 250);
+  background-color: rgb(255, 255, 255);
   display: flex;
   justify-content: center;
+  margin-bottom: 40px;
  }
  .item{
   width: 100%;
@@ -961,13 +957,17 @@ body {
   grid-template-columns: repeat(2, 1fr);
   display: grid;
   z-index: 1000;
+  border-radius: 17px;
+background: #e0e0e0;
+box-shadow:  34px 34px 51px #b1b1b1,
+             -34px -34px 51px #ffffff;
  }
  .contact{
   background:#ffffff;
   
  }
  .submit-form{
-  background:rgb(90, 36, 156);
+  background:rgb(88, 46, 140);
  }
  .first-text{
   color: rgb(0, 0, 0);
@@ -1013,8 +1013,9 @@ border-radius: 5px;
 transition: .3s;
  }
  .social-media i:hover{
-  background: white;
+  background: rgb(255, 254, 255);
   color: rgb(90, 90, 180);
+  box-shadow: 2px 2px 1px rgb(90, 90, 180);
  }
 form{
   padding: 0 50px;
@@ -1077,9 +1078,9 @@ textarea.input{
   font-size: 16px;
   color: #31256c;
   cursor: pointer;
-  font-weight: 500;
+  font-weight: 600;
 }
-@media(max-width:850px){
+/* @media(max-width:850px){
 .item{
   grid-template-columns: 1fr;
 }
@@ -1097,8 +1098,8 @@ textarea.input{
  } 
   
 }
-
-@media (max-width: 480px){
+ */
+/* @media (max-width: 480px){
   
   .item{
     grid-template-columns: 1fr;
@@ -1115,7 +1116,7 @@ textarea.input{
     height: 40px;
     font-size: 20px;
    } 
-  }
+  } */
 
   /**
    * FOOTER
@@ -1166,6 +1167,18 @@ textarea.input{
     justify-content: space-between;
   }
 
+  /* @media (min-width: 1640px) {
+    .hero
+    {
+        background-image: 
+        url("../images/wave.svg"),
+   url("../images/hero-bg.png"),
+
+                    var(--gradient-1)
+                            
+                  }
+  
+} */
 
 
   /**
