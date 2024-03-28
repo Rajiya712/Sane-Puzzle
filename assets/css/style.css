@@ -121,6 +121,7 @@ body {
   background-color: var(--white);
   color: var(--purple-navy);
   font-size: 1.6rem;
+  height: 100vh;
 }
 
 ::-webkit-scrollbar { width: 10px; }
@@ -167,7 +168,7 @@ body {
 .section-title {
   color: var(--st-patricks-blue);
   font-size: var(--fs-3);
-  margin-block-end: 60px;
+  margin-block-end: 40px;
   max-width: max-content;
   margin-inline: auto;
 }
@@ -235,7 +236,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 30px;
+  gap: 6px;
 }
 
 .logo {
@@ -243,7 +244,9 @@ body {
   font-family: var(--ff-source-sans-pro);
   font-size: var(--fs-3);
 }
-
+.logo-desplay{
+  display: flex;
+}
 .nav-open-btn {
   color: rgb(250, 250, 250);
   background-color:#31256c;
@@ -572,7 +575,9 @@ body {
   #FOOTER
 \*-----------------------------------*/
 
-.footer { font-size: var(--fs-8); }
+.footer { font-size: var(--fs-8);
+  
+}
 
 .footer a { color: inherit; }
 
@@ -938,7 +943,7 @@ body {
     z-index: 0;
     position: relative;
     width: 100%;
-    height: 50vh;
+    height: 60vh;
     align-items: center;
     background-color: rgb(255, 255, 255);
     display: flex;
@@ -946,6 +951,7 @@ body {
     margin-bottom: 45px;
     padding-top: 5%;
     padding-bottom: 5%;
+    padding-block-end: var(--section-padding);
  }
  .item{
   position: relative;
